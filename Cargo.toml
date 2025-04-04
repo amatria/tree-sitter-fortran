@@ -1,0 +1,34 @@
+[package]
+name = "tree-sitter-fortran"
+description = "Fortran grammar for tree-sitter"
+version = "0.0.0"
+authors = ["Iñaki Amatria Barral"]
+license = "MIT"
+readme = "README.md"
+keywords = ["incremental", "parsing", "tree-sitter", "fortran"]
+categories = ["parser-implementations", "parsing", "text-editors"]
+repository = "https://github.com/tree-sitter/tree-sitter-fortran"
+edition = "2021"
+autoexamples = false
+
+build = "bindings/rust/build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+  "tree-sitter.json",
+  "LICENSE",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter-language = "0.1"
+
+[build-dependencies]
+cc = "1.2"
+
+[dev-dependencies]
+tree-sitter = "0.25.3"

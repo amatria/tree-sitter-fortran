@@ -1,0 +1,167 @@
+[
+  {
+    "type": "double_colon_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_stmt",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_program_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "end_keyword",
+          "named": true
+        },
+        {
+          "type": "end_of_stmt",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        },
+        {
+          "type": "program_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "end_program_stmt",
+          "named": true
+        },
+        {
+          "type": "program_stmt",
+          "named": true
+        },
+        {
+          "type": "variable_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "program_stmt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "end_of_stmt",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        },
+        {
+          "type": "program_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "program",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "double_colon_keyword",
+          "named": true
+        },
+        {
+          "type": "end_of_stmt",
+          "named": true
+        },
+        {
+          "type": "integer_keyword",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "ampersand_newline",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "bare_ampersand",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  }
+]

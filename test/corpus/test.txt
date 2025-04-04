@@ -1,0 +1,68 @@
+================================================================================
+Test
+================================================================================
+
+! The quick brown fox jumps over the lazy dog
+! The quick brown fox jumps over the lazy dog
+progr&
+    am ma&
+    in
+  ! The quick brown fox jumps over the lazy dog
+  integer :: num_iters
+  integer :: num_&
+      &  iters
+  integer :: num_&
+      &iters
+  i n t e g e r :&
+  : n u m _ i t e r s
+end &
+    program &
+    & main ! The quick brown fox jumps over the lazy dog
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (comment)
+  (program
+    (program_stmt
+      (program_keyword
+        (ampersand_newline))
+      (name
+        (ampersand_newline))
+      (end_of_stmt))
+    (comment)
+    (variable_declaration
+      (integer_keyword)
+      (double_colon_keyword)
+      (name)
+      (end_of_stmt))
+    (variable_declaration
+      (integer_keyword)
+      (double_colon_keyword)
+      (name
+        (ampersand_newline)
+        (bare_ampersand))
+      (end_of_stmt))
+    (variable_declaration
+      (integer_keyword)
+      (double_colon_keyword)
+      (name
+        (ampersand_newline)
+        (bare_ampersand))
+      (end_of_stmt))
+    (variable_declaration
+      (integer_keyword)
+      (double_colon_keyword
+        (ampersand_newline))
+      (name)
+      (end_of_stmt))
+    (end_program_stmt
+      (end_keyword)
+      (ampersand_newline)
+      (program_keyword)
+      (ampersand_newline)
+      (bare_ampersand)
+      (name)
+      (comment)
+      (end_of_stmt))))
